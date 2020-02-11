@@ -10,28 +10,28 @@ public class Login {
     private WebDriver driver;
     private String loginPageURL = "https://mypreciousweb.herokuapp.com/login";
 
-    @FindBy(xpath = "//*[@id=\\page-top\\]/div/div/div/div/div/div/div[2]/div/div[1]/h1")
+    @FindBy(xpath = "//*[@id='page-top']/div/div/div/div/div/div/div[2]/div/div[1]/h1")
     private WebElement welcomeText;
 
-    @FindBy(xpath = "//*[@id=\\username\\]")
+    @FindBy(className = "form-control form-control-user required-custom-input")
     private WebElement fieldUsername;
 
-    @FindBy(xpath = "//*[@id=\\password\\]")
+    @FindBy(xpath = "//*[@id='password']")
     private WebElement fieldPassword;
 
-    @FindBy(xpath = "//*[@id=\\customCheck\\]")
+    @FindBy(xpath = "//*[@id='customCheck']")
     private WebElement checkBoxRememberMe;
 
-    @FindBy(xpath = "//*[@id=\\page-top\\]/div/div/div/div/div/div/div[2]/div/form/div[3]/div/label")
+    @FindBy(xpath = "//*[@id='page-top']/div/div/div/div/div/div/div[2]/div/form/div[3]/div/label")
     private WebElement checkBoxLabelRememberMe;
 
-    @FindBy(xpath = "//*[@id=\\page-top\\]/div/div/div/div/div/div/div[2]/div/form/button")
+    @FindBy(xpath = "//*[@id='page-top']/div/div/div/div/div/div/div[2]/div/form/button")
     private WebElement buttonLogin;
 
-    @FindBy(xpath = "//*[@id=\\page-top\\]/div/div/div/div/div/div/div[2]/div/div[2]/a")
+    @FindBy(xpath = "//*[@id='page-top']/div/div/div/div/div/div/div[2]/div/div[2]/a")
     private WebElement buttonForgotPassword;
 
-    @FindBy(xpath = "//*[@id=\"page-top\"]/div/div/div/div/div/div/div[1]")
+    @FindBy(xpath = "//*[@id='page-top']/div/div/div/div/div/div/div[1]")
     private WebElement imageLogin;
 
     public Login(WebDriver driver) {
