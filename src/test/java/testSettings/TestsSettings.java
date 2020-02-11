@@ -6,7 +6,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import pages.Login;
 
 public class TestsSettings {
@@ -23,7 +22,6 @@ public class TestsSettings {
         System.setProperty("webdriver.chrome.driver", System.getProperty("user.home") + path);
         driver = new ChromeDriver();
         System.out.println("SetUp is done");
-        Login login = new Login(driver);
     }
 
     @BeforeMethod
