@@ -1,13 +1,14 @@
+package pages;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.Login;
+import testSettings.TestsSettings;
+
 
 public class TestDrive extends TestsSettings {
-    Login login = new Login(driver);
-
+Login login;
 
     @Test
     public void openLoginPage() {
