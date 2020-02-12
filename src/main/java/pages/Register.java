@@ -8,7 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 public class Register {
 
     private WebDriver driver;
-    private String registerPageURL = "https://mypreciousweb.herokuapp.com/register";
 
     @FindBy(xpath = "//*[@id='page-top']/div/div/div/div/div[2]/div/div[1]/h1")
     private WebElement labelRegistration;
@@ -47,14 +46,6 @@ public class Register {
     public Register(WebDriver driver) {
         PageFactory.initElements(driver, this);
         this.driver = driver;
-    }
-
-    public WebDriver getDriver() {
-        return driver;
-    }
-
-    public String getRegisterPageURL() {
-        return registerPageURL;
     }
 
     public WebElement getLabelRegistration() {

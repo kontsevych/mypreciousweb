@@ -19,14 +19,16 @@ public class Config {
         }
     }
 
-
     public static String loginPageURL() {
-        return property.getProperty("page.login");
+        return property.getProperty("domain") + property.getProperty("page.login");
     }
 
     public static String registrationPageURL() {
-        return property.getProperty("page.registration");
+        return property.getProperty("domain") + property.getProperty("page.registration");
     }
 
+    public static String driverChrome(){
+        return property.getProperty("driverChrome");
+    }
 
 }

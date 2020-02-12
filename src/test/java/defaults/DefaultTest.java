@@ -8,15 +8,15 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import pages.Login;
 
-public class DefaultTestSetting {
+public class DefaultTest {
     protected WebDriver driver;
     protected Login login;
 
     @BeforeClass
     public void setUp() {
-        String oS = System.getProperty("os.name").toLowerCase();
-        String path = "Driver/chromedriver";
         Config.configSetup();
+        String oS = System.getProperty("os.name").toLowerCase();
+        String path = Config.driverChrome();
 
         if (oS.contains("windows 10")) {
             path = "\\Driver\\chromedriver.exe";

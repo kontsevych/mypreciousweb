@@ -41,10 +41,6 @@ public class Login {
         this.driver = driver;
     }
 
-    public WebDriver getDriver() {
-        return driver;
-    }
-
     public WebElement getButtonRegistration() {
         return buttonRegistration;
     }
