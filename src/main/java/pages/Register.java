@@ -10,40 +10,41 @@ public class Register {
     private WebDriver driver;
     private String registerPageURL = "https://mypreciousweb.herokuapp.com/register";
 
-	@FindBy(xpath="//*[@id='page-top']/div/div/div/div/div[2]/div/div[1]/h1")
-	private WebElement labelRegistration;
+    @FindBy(xpath = "//*[@id='page-top']/div/div/div/div/div[2]/div/div[1]/h1")
+    private WebElement labelRegistration;
 
-	@FindBy(xpath="//*[@id='login']")
-	private WebElement fieldLogin;
+    @FindBy(xpath = "//*[@id='login']")
+    private WebElement fieldLogin;
 
-	@FindBy(xpath="//*[@id='password']")
-	private WebElement fieldPassword;
+    @FindBy(xpath = "//*[@id='password']")
+    private WebElement fieldPassword;
 
-	@FindBy(xpath="//*[@id='password-repeat']")
-	private WebElement fieldCopyPassword;
+    @FindBy(xpath = "//*[@id='password-repeat']")
+    private WebElement fieldCopyPassword;
 
-	@FindBy(xpath="//*[@id='email']")
-	private WebElement fieldEmail;
+    @FindBy(xpath = "//*[@id='email']")
+    private WebElement fieldEmail;
 
-	@FindBy(xpath="//*[@id='page-top']/div/div/div/div/div[2]/div/form/div[3]/div/small")
-	private WebElement labelNoticeMessage;
+    @FindBy(xpath = "//*[@id='page-top']/div/div/div/div/div[2]/div/form/div[3]/div/small")
+    private WebElement labelNoticeMessage;
 
-	@FindBy(xpath="//*[@id='first-name']")
-	private WebElement fieldFirstName;
+    @FindBy(xpath = "//*[@id='first-name']")
+    private WebElement fieldFirstName;
 
-	@FindBy(xpath = "//*[@id='last-name']")
+    @FindBy(xpath = "//*[@id='last-name']")
     private WebElement fieldLastName;
 
-	@FindBy(xpath="//*[@id='page-top']/div/div/div/div/div[2]/div/form/button")
-	private WebElement buttonRegistration;
+    @FindBy(xpath = "//*[@id='page-top']/div/div/div/div/div[2]/div/form/button")
+    private WebElement buttonRegistration;
 
-	@FindBy(xpath="//*[@id='page-top']/div/div/div/div/div[2]/div/div[2]/a")
-	private WebElement buttonBackToLoginPage;
+    @FindBy(xpath = "//*[@id='page-top']/div/div/div/div/div[2]/div/div[2]/a")
+    private WebElement buttonBackToLoginPage;
 
-	@FindBy(xpath="//*[@id='page-top']/div/div/div/div/div[2]/div/div[2]/a")
-	private WebElement imageRegisterPage;
+    @FindBy(xpath = "//*[@id='page-top']/div/div/div/div/div[2]/div/div[2]/a")
+    private WebElement imageRegisterPage;
 
-    public Register(WebDriver driver){
+
+    public Register(WebDriver driver) {
         PageFactory.initElements(driver, this);
         this.driver = driver;
     }
@@ -99,4 +100,5 @@ public class Register {
     public WebElement getImageRegisterPage() {
         return imageRegisterPage;
     }
+
 }

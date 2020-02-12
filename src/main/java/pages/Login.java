@@ -8,7 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 public class Login {
 
     private WebDriver driver;
-    private String loginPageURL = "https://mypreciousweb.herokuapp.com/login";
 
     @FindBy(xpath = "//*[@id='page-top']/div/div/div/div/div/div/div[2]/div/div[1]/h1")
     private WebElement welcomeText;
@@ -34,6 +33,9 @@ public class Login {
     @FindBy(xpath = "//*[@id='page-top']/div/div/div/div/div/div/div[1]")
     private WebElement imageLogin;
 
+    @FindBy(xpath = "//*[@id='page-top']/div/div/div/div/div/div/div[2]/div/div[3]/a")
+    private WebElement buttonRegistration;
+
     public Login(WebDriver driver) {
         PageFactory.initElements(driver, this);
         this.driver = driver;
@@ -43,8 +45,8 @@ public class Login {
         return driver;
     }
 
-    public String getLoginPageURL() {
-        return loginPageURL;
+    public WebElement getButtonRegistration() {
+        return buttonRegistration;
     }
 
     public WebElement getWelcomeText() {
