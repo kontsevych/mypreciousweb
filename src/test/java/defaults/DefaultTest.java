@@ -3,10 +3,7 @@ package defaults;
 import com.mypreciousweb.config.Config;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.*;
 import pages.Login;
 
 import java.util.concurrent.TimeUnit;
@@ -15,7 +12,7 @@ public class DefaultTest {
     protected WebDriver driver;
     protected Login login;
 
-    @BeforeSuite
+    @BeforeClass
     public void setUp() {
         Config.configSetup();
         String oS = System.getProperty("os.name").toLowerCase();
@@ -31,25 +28,28 @@ public class DefaultTest {
         System.out.println("The setup process is completed");
     }
 
-    @BeforeTest
+    @BeforeMethod
     public void profileSetup() {
         driver.manage().window().maximize();
-        System.out.println("The profile setup process is completed");
+        driver.get(Config.loginPageURL());
+        System.out.println("The profile setup process is completed - @BeforeTest");
     }
 
-    @BeforeClass
-    public void appSetUp(){
-        driver.get(Config.loginPageURL());
-        System.out.println("The app setup process is completed");
-    }
 
     @AfterClass
-    public void afterMethod() {
-        driver.quit();
+    public void afterClass() {
+       driver.quit();
         System.out.println("The close_up process is completed");
     }
 
-    public static void main(String[] args) {
-        System.out.println(System.getProperty("user.home"));
+    @AfterTest
+    public void afterTest() {
+        System.out.println("After Test");
     }
+
+    @AfterSuite
+    public void afterSuite() {
+        System.out.println("After suite");
+    }
+
 }
