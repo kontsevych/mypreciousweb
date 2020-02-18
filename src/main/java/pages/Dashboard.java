@@ -8,7 +8,7 @@ public class Dashboard {
 
     public WebDriver driver;
 
-    @FindBy(xpath = "//*[@id='content']/div/div[1]/h1")
+    @FindBy(id = "content")
     private WebElement LabelDashboard;
 
 

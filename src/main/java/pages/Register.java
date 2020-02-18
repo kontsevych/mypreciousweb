@@ -9,28 +9,28 @@ public class Register {
 
     private WebDriver driver;
 
-    @FindBy(xpath = "//*[@id='page-top']/div/div/div/div/div[2]/div/div[1]/h1")
+    @FindBy(id = "page-top")
     private WebElement labelRegistration;
 
-    @FindBy(xpath = "//*[@id='login']")
+    @FindBy(id = "login")
     private WebElement fieldLogin;
 
-    @FindBy(xpath = "//*[@id='password']")
+    @FindBy(id = "password")
     private WebElement fieldPassword;
 
-    @FindBy(xpath = "//*[@id='password-repeat']")
+    @FindBy(id = "password-repeat")
     private WebElement fieldCopyPassword;
 
-    @FindBy(xpath = "//*[@id='email']")
+    @FindBy(id = "email")
     private WebElement fieldEmail;
 
     @FindBy(xpath = "//*[@id='page-top']/div/div/div/div/div[2]/div/form/div[3]/div/small")
     private WebElement labelNoticeMessage;
 
-    @FindBy(xpath = "//*[@id='first-name']")
+    @FindBy(id = "first-name")
     private WebElement fieldFirstName;
 
-    @FindBy(xpath = "//*[@id='last-name']")
+    @FindBy(id = "last-name")
     private WebElement fieldLastName;
 
     @FindBy(xpath = "//*[@id='page-top']/div/div/div/div/div[2]/div/form/button")

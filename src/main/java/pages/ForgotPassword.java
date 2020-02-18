@@ -9,10 +9,10 @@ public class ForgotPassword {
 
     private WebDriver driver;
 
-    @FindBy(xpath = "//*[@id='page-top']/div/div/div/div/div/div/div[2]/div/div[1]/h1")
+    @FindBy(id = "page-top")
     private WebElement labelResetYourPassword;
 
-    @FindBy(xpath = "//*[@id='email']")
+    @FindBy(id = "email")
     private WebElement fieldEmail;
 
     @FindBy(xpath = "//*[@id='page-top']/div/div/div/div/div/div/div[2]/div/form/button")

@@ -20,15 +20,23 @@ public class Config {
     }
 
     public static String loginPageURL() {
-        return property.getProperty("domain") + property.getProperty("page.login");
+        return property.getProperty("pathDomain") + property.getProperty("page.login");
     }
 
     public static String registrationPageURL() {
-        return property.getProperty("domain") + property.getProperty("page.registration");
+        return property.getProperty("pathDomain") + property.getProperty("page.registration");
     }
 
-    public static String driverChrome(){
-        return property.getProperty("driverChrome");
+    public static String pathDriverChrome(){
+        return property.getProperty("pathDriverChrome");
+    }
+
+    public static String pathDriverChromeWindows(){
+        return property.getProperty("pathDriverChromeWindows");
+    }
+
+    public static String pathWebdriverChromeDriver(){
+        return property.getProperty("pathWebdriverChromeDriver");
     }
 
 }

@@ -39,15 +39,11 @@ public class SideBar {
     @FindBy(xpath = "//*[@id='accordionSidebar']/li[4]/div/div/a[3]")
     private WebElement SettingsDropdownButtonCurrencies;
 
-    @FindBy(xpath = "//*[@id='sidebarToggle']")
+    @FindBy(id = "sidebarToggle")
     private WebElement buttonOpenHideSideBar;
 
     public SideBar(WebDriver driver) {
         PageFactory.initElements(driver, this);
-        this.driver = driver;
-    }
-
-    public void setDriver(WebDriver driver) {
         this.driver = driver;
     }
 

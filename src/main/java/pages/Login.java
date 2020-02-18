@@ -12,13 +12,13 @@ public class Login {
     @FindBy(xpath = "//*[@id='page-top']/div/div/div/div/div/div/div[2]/div/div[1]/h1")
     private WebElement welcomeText;
 
-    @FindBy(className = "form-control form-control-user required-custom-input")
+    @FindBy(id = "username")
     private WebElement fieldUsername;
 
-    @FindBy(xpath = "//*[@id='password']")
+    @FindBy(id = "password")
     private WebElement fieldPassword;
 
-    @FindBy(xpath = "//*[@id='customCheck']")
+    @FindBy(id = "customCheck")
     private WebElement checkBoxRememberMe;
 
     @FindBy(xpath = "//*[@id='page-top']/div/div/div/div/div/div/div[2]/div/form/div[3]/div/label")
