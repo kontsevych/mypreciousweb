@@ -5,9 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class ForgotPassword {
-
-    private WebDriver driver;
+public class ForgotPassword extends Page{
 
     @FindBy(id = "page-top")
     private WebElement labelResetYourPassword;
