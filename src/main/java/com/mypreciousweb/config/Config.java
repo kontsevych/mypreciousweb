@@ -20,11 +20,11 @@ public class Config {
     }
 
     public static String loginPageURL() {
-        return property.getProperty("pathDomain") + property.getProperty("page.login");
+        return getPathDomain() + property.getProperty("page.login");
     }
 
     public static String registrationPageURL() {
-        return property.getProperty("pathDomain") + property.getProperty("page.registration");
+        return getPathDomain() + property.getProperty("page.registration");
     }
 
     public static String pathDriverChrome(){
@@ -35,8 +35,11 @@ public class Config {
         return property.getProperty("pathDriverChromeWindows");
     }
 
-    public static String pathWebdriverChromeDriver(){
+    public static String setNameWebdriverChromeDriver(){
         return property.getProperty("pathWebdriverChromeDriver");
     }
 
+    public static String getPathDomain(){
+        return property.getProperty("pathDomain");
+    }
 }

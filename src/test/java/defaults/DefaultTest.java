@@ -23,7 +23,7 @@ public class DefaultTest {
         if (oS.contains("windows 10")) {
             path = Config.pathDriverChromeWindows();
         }
-        System.setProperty(Config.pathWebdriverChromeDriver(), System.getProperty("user.home") + path);
+        System.setProperty(Config.setNameWebdriverChromeDriver(), System.getProperty("user.home") + path);
         driver = new ChromeDriver();
         login = new Login(driver);
         register = new Register(driver);
