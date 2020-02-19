@@ -10,8 +10,8 @@ public class DefaultTestRegister extends DefaultTest {
 
     @BeforeClass
     public void setUpRegister() {
-    login = new Login(driver);
-    register = new Register(driver);
+        login = new Login(driver);
+        register = new Register(driver);
     }
 
 }
