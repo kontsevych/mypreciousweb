@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class SideBar extends Page{
+public class SideBar extends Page {
 
     @FindBy(xpath = "//*[@id='accordionSidebar']/a")
     private WebElement bannerLink;
@@ -49,87 +49,45 @@ public class SideBar extends Page{
         return bannerLink;
     }
 
-    public void setBannerLink(WebElement bannerLink) {
-        this.bannerLink = bannerLink;
-    }
-
     public WebElement getButtonDashboard() {
         return buttonDashboard;
-    }
-
-    public void setButtonDashboard(WebElement buttonDashboard) {
-        this.buttonDashboard = buttonDashboard;
     }
 
     public WebElement getLabelMoney() {
         return labelMoney;
     }
 
-    public void setLabelMoney(WebElement labelMoney) {
-        this.labelMoney = labelMoney;
-    }
-
     public WebElement getButtonTransactions() {
         return buttonTransactions;
-    }
-
-    public void setButtonTransactions(WebElement buttonTransactions) {
-        this.buttonTransactions = buttonTransactions;
     }
 
     public WebElement getLabelSystem() {
         return labelSystem;
     }
 
-    public void setLabelSystem(WebElement labelSystem) {
-        this.labelSystem = labelSystem;
-    }
-
     public WebElement getButtonCategories() {
         return buttonCategories;
-    }
-
-    public void setButtonCategories(WebElement buttonCategories) {
-        this.buttonCategories = buttonCategories;
     }
 
     public WebElement getButtonSettingsDropdownMenu() {
         return buttonSettingsDropdownMenu;
     }
 
-    public void setButtonSettingsDropdownMenu(WebElement buttonSettingsDropdownMenu) {
-        this.buttonSettingsDropdownMenu = buttonSettingsDropdownMenu;
-    }
-
     public WebElement getSettingsDropdownButtonSettings() {
         return SettingsDropdownButtonSettings;
-    }
-
-    public void setSettingsDropdownButtonSettings(WebElement settingsDropdownButtonSettings) {
-        SettingsDropdownButtonSettings = settingsDropdownButtonSettings;
     }
 
     public WebElement getSettingsDropdownButtonTemplates() {
         return SettingsDropdownButtonTemplates;
     }
 
-    public void setSettingsDropdownButtonTemplates(WebElement settingsDropdownButtonTemplates) {
-        SettingsDropdownButtonTemplates = settingsDropdownButtonTemplates;
-    }
-
     public WebElement getSettingsDropdownButtonCurrencies() {
         return SettingsDropdownButtonCurrencies;
-    }
-
-    public void setSettingsDropdownButtonCurrencies(WebElement settingsDropdownButtonCurrencies) {
-        SettingsDropdownButtonCurrencies = settingsDropdownButtonCurrencies;
     }
 
     public WebElement getButtonOpenHideSideBar() {
         return buttonOpenHideSideBar;
     }
 
-    public void setButtonOpenHideSideBar(WebElement buttonOpenHideSideBar) {
-        this.buttonOpenHideSideBar = buttonOpenHideSideBar;
-    }
+
 }
