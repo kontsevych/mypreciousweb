@@ -20,8 +20,7 @@ public class ForgotPassword extends Page{
     private WebElement buttonLogin;
 
     public ForgotPassword(WebDriver driver) {
-        PageFactory.initElements(driver, this);
-        this.driver = driver;
+        super(driver);
     }
 
     public WebElement getLabelResetYourPassword() {

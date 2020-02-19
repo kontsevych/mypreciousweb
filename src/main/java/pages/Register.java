@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Register extends Page{
+public class Register extends Page {
 
     @FindBy(id = "page-top")
     private WebElement labelRegistration;
@@ -42,8 +42,7 @@ public class Register extends Page{
 
 
     public Register(WebDriver driver) {
-        PageFactory.initElements(driver, this);
-        this.driver = driver;
+        super(driver);
     }
 
     public WebElement getLabelRegistration() {

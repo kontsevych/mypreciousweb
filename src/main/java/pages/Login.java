@@ -35,8 +35,7 @@ public class Login extends Page {
     private WebElement buttonRegistration;
 
     public Login(WebDriver driver) {
-        PageFactory.initElements(driver, this);
-        this.driver = driver;
+        super(driver);
     }
 
     public WebElement getButtonRegistration() {

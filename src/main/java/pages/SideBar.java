@@ -41,8 +41,7 @@ public class SideBar extends Page {
     private WebElement buttonOpenHideSideBar;
 
     public SideBar(WebDriver driver) {
-        PageFactory.initElements(driver, this);
-        this.driver = driver;
+        super(driver);
     }
 
     public WebElement getBannerLink() {
