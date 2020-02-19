@@ -1,14 +1,14 @@
 package pages.login;
 
 import com.mypreciousweb.config.Config;
-import defaults.DefaultTest;
+import defaults.DefaultTestLogin;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 /**
  * Перевіряємо всі елементи на сторінці логіну
  */
-public class TestLogin_MPW_01 extends DefaultTest {
+public class TestLogin_MPW_01 extends DefaultTestLogin {
 
     @Test
     public void MPW_01() {
