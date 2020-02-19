@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class TestLogin_MPW_01 extends DefaultTestLogin {
 
     @Test
-    public void MPW_01() {
+    public void MPW_01_Verify_UI_Elements() {
         Assert.assertEquals(Config.loginPageURL(), driver.getCurrentUrl());
         Assert.assertTrue(login.getWelcomeText().isDisplayed());
         Assert.assertTrue(login.getImageLogin().isDisplayed());

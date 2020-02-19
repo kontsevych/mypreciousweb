@@ -9,6 +9,9 @@ public class Dashboard extends Page {
     @FindBy(id = "content")
     private WebElement LabelDashboard;
 
+    public WebElement getLabelDashboard() {
+        return LabelDashboard;
+    }
 
     public Dashboard(WebDriver driver) {
         super(driver);

@@ -27,19 +27,32 @@ public class Config {
         return getPathDomain() + property.getProperty("page.registration");
     }
 
-    public static String pathDriverChrome(){
+    public static String pathDriverChrome() {
         return property.getProperty("pathDriverChrome");
     }
 
-    public static String pathDriverChromeWindows(){
+    public static String pathDriverChromeWindows() {
         return property.getProperty("pathDriverChromeWindows");
     }
 
-    public static String setNameWebdriverChromeDriver(){
+    public static String setNameWebdriverChromeDriver() {
         return property.getProperty("pathWebdriverChromeDriver");
     }
 
-    public static String getPathDomain(){
+    public static String getPathDomain() {
         return property.getProperty("pathDomain");
     }
+
+    public static String getUsername() {
+        return property.getProperty("username");
+    }
+
+    public static String getPassword() {
+        return property.getProperty("password");
+    }
+
+    public static String getPageDashboard() {
+        return property.getProperty("page.dashboard");
+    }
+
 }
