@@ -39,7 +39,6 @@ public class Register extends Page {
     @FindBy(xpath = "//*[@id='page-top']/div/div/div/div/div[2]/div/div[2]/a")
     private WebElement imageRegisterPage;
 
-
     public Register(WebDriver driver) {
         super(driver);
     }
