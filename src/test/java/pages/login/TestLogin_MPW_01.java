@@ -20,5 +20,9 @@ public class TestLogin_MPW_01 extends DefaultTestLogin {
         Assert.assertTrue(login.getButtonRegistration().isDisplayed());
         Assert.assertTrue(login.getButtonForgotPassword().isDisplayed());
         Assert.assertTrue(login.getButtonLogin().isDisplayed());
+
+        Assert.assertEquals(Config.getLabelLoginTextWelcomeBack(), login.getWelcomeText().getText());
+        System.out.println(login.getFieldPassword().getText());
+        Assert.assertEquals(Config.getLabelLoginFieldPassword(), login.getFieldPassword().getCssValue("placeholder"));
     }
 }

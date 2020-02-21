@@ -13,7 +13,7 @@ public class TestLogin_MPW_03 extends DefaultTestLogin {
 
     @Test
     public void MPW_03_Verify_Validation() {
-        login.getFieldUsername().sendKeys("tes");
+        login.getFieldUsername().sendKeys("abc");
         login.getFieldPassword().sendKeys("123");
         login.getButtonLogin().click();
 

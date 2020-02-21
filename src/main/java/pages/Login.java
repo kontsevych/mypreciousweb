@@ -12,7 +12,7 @@ public class Login extends Page {
     @FindBy(id = "username")
     private WebElement fieldUsername;
 
-    @FindBy(id = "password")
+    @FindBy(xpath = "//*[@id='password']")
     private WebElement fieldPassword;
 
     @FindBy(id = "customCheck")
@@ -45,6 +45,10 @@ public class Login extends Page {
 
 	@FindBy(xpath="//*[@id='page-top']/div/div/div/div/div/div/div[2]/div/form/div[2]/div")
 	private WebElement alertInvalidPasswordLength;
+
+	@FindBy(xpath="//*[@id='page-top'']/div/div/div/div/div/div/div[2]/div/div[2]/a")
+	private WebElement buttonLoginLogin;
+
 
     public WebElement getAlertInvalidUsernameLength() {
         return alertInvalidUsernameLength;
