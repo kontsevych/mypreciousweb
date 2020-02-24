@@ -83,6 +83,18 @@ public class Config {
         return property.getProperty("alertLoginWrongUsernameOrPassword");
     }
 
+    public static String getLabelLoginButtonForgotPassword() {
+        return property.getProperty("labelLoginButtonForgotPassword");
+    }
+
+    public static String getLabelLoginButtonLogin() {
+        return property.getProperty("labelLoginButtonLogin");
+    }
+
+    public static String getLabelLoginButtonRegistration() {
+        return property.getProperty("labelLoginButtonRegistration");
+    }
+
     public static String getLabelRegisterFieldUsername() {
         return property.getProperty("labelRegisterFieldUsername");
     }

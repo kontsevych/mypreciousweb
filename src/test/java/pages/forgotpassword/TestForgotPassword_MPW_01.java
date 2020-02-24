@@ -15,7 +15,7 @@ public class TestForgotPassword_MPW_01 extends DefaultTestForgotPassword {
         Assert.assertTrue(forgotPassword.getFieldEmail().isDisplayed());
         System.out.println("config " + Config.getLabelForgotPasswordFieldEmail());
         System.out.println("xpath " + forgotPassword.getFieldEmail().getText());
-        Assert.assertEquals(Config.getLabelForgotPasswordFieldEmail(), forgotPassword.getFieldEmail().getText());
+        Assert.assertEquals(Config.getLabelForgotPasswordFieldEmail(), forgotPassword.getFieldEmail().getAttribute(""));
 
     }
 }

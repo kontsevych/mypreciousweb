@@ -12,13 +12,13 @@ public class Login extends Page {
     @FindBy(id = "username")
     private WebElement fieldUsername;
 
-    @FindBy(xpath = "//*[@id='password']")
+    @FindBy(id = "password")
     private WebElement fieldPassword;
 
     @FindBy(id = "customCheck")
     private WebElement checkBoxRememberMe;
 
-    @FindBy(xpath = "//*[@id='page-top']/div/div/div/div/div/div/div[2]/div/form/div[3]/div/label")
+    @FindBy(xpath = "//*[@id='page-top']/div/div/div/div/div/div/div[2]/div/form/div[3]")
     private WebElement checkBoxLabelRememberMe;
 
     @FindBy(xpath = "//*[@id='page-top']/div/div/div/div/div/div/div[2]/div/form/button")
@@ -33,11 +33,7 @@ public class Login extends Page {
     @FindBy(xpath = "//*[@id='page-top']/div/div/div/div/div/div/div[2]/div/div[3]/a")
     private WebElement buttonRegistration;
 
-    public WebElement getAlertWrongLoginOrPassword() {
-        return alertWrongLoginOrPassword;
-    }
-
-    @FindBy(xpath="//*[@id='page-top']/div/div/div/div/div/div/div[2]/div/div[2]")
+    @FindBy(xpath = "//*[@id=\"page-top\"]/div/div/div/div/div/div/div[2]/div/div[3]/a")
 	private WebElement alertWrongLoginOrPassword;
 
 	@FindBy(xpath="//*[@id='page-top']/div/div/div/div/div/div/div[2]/div/form/div[1]/div")
@@ -46,9 +42,10 @@ public class Login extends Page {
 	@FindBy(xpath="//*[@id='page-top']/div/div/div/div/div/div/div[2]/div/form/div[2]/div")
 	private WebElement alertInvalidPasswordLength;
 
-	@FindBy(xpath="//*[@id='page-top'']/div/div/div/div/div/div/div[2]/div/div[2]/a")
-	private WebElement buttonLoginLogin;
 
+    public WebElement getAlertWrongLoginOrPassword() {
+        return alertWrongLoginOrPassword;
+    }
 
     public WebElement getAlertInvalidUsernameLength() {
         return alertInvalidUsernameLength;
