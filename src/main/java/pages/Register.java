@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class Register extends Page {
 
-    @FindBy(id = "page-top")
+    @FindBy(xpath = "/html/body/div/div/div/div/div[2]/div/div[1]/h1")
     private WebElement labelRegistration;
 
     @FindBy(id = "login")

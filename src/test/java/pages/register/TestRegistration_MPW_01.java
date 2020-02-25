@@ -5,12 +5,14 @@ import defaults.DefaultTestRegister;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-
+/**
+ * Перевірика UI на сторінці реєстрації
+ */
 public class TestRegistration_MPW_01 extends DefaultTestRegister {
 
     @Test
     public void MPW_01() {
-        login.getButtonRegistration().click();
+
         Assert.assertEquals(driver.getCurrentUrl(), Config.registrationPageURL());
         Assert.assertTrue(register.getButtonRegistration().isDisplayed());
         Assert.assertTrue(register.getButtonBackToLoginPage().isDisplayed());
@@ -23,5 +25,14 @@ public class TestRegistration_MPW_01 extends DefaultTestRegister {
         Assert.assertTrue(register.getImageRegisterPage().isDisplayed());
         Assert.assertTrue(register.getLabelNoticeMessage().isDisplayed());
         Assert.assertTrue(register.getLabelRegistration().isDisplayed());
+
+        Assert.assertEquals(register.getLabelRegistration().getText(), Config.getLabelRegister());
+        Assert.assertEquals(register.getFieldLogin().getAttribute("placeholder"), Config.getLabelRegisterFieldUsername());
+        Assert.assertEquals(register.getFieldPassword().getAttribute("placeholder"), Config.getLabelRegisterFieldPassword());
+        Assert.assertEquals(register.getFieldCopyPassword().getAttribute("placeholder"), Config.getLabelRegisterFieldRepeatPassword());
+        Assert.assertEquals(register.getFieldEmail().getAttribute("placeholder"), Config.getLabelRegisterFieldEmail());
+        Assert.assertEquals(register.getLabelNoticeMessage().getText(), Config.getLabelRegisterNotificationInfo());
+        Assert.assertEquals(register.getFieldFirstName().getAttribute("placeholder"), Config.getLabelRegisterFieldFirstName());
+        Assert.assertEquals(register.getFieldLastName().getAttribute("placeholder"), Config.getLabelRegisterFieldLastName());
     }
 }

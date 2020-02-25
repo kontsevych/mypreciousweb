@@ -12,7 +12,7 @@ public class TestLogin_MPW_01 extends DefaultTestLogin {
 
     @Test
     public void MPW_01_Verify_UI_Elements() {
-        Assert.assertEquals(Config.loginPageURL(), driver.getCurrentUrl());
+        Assert.assertEquals(driver.getCurrentUrl(), Config.loginPageURL());
 
         Assert.assertTrue(login.getImageLogin().isDisplayed());
         Assert.assertTrue(login.getWelcomeText().isDisplayed());
@@ -23,14 +23,13 @@ public class TestLogin_MPW_01 extends DefaultTestLogin {
         Assert.assertTrue(login.getButtonForgotPassword().isDisplayed());
         Assert.assertTrue(login.getButtonRegistration().isDisplayed());
 
-        Assert.assertEquals(Config.getLabelLoginTextWelcomeBack(), login.getWelcomeText().getText());
-        Assert.assertEquals(Config.getLabelLoginFieldPassword(), login.getFieldPassword().getAttribute("placeholder"));
-        Assert.assertEquals(Config.getLabelLoginFieldUsername(), login.getFieldUsername().getAttribute("placeholder"));
-        Assert.assertEquals(Config.getLabelLoginButtonLogin(), login.getButtonLogin().getText());
-        Assert.assertEquals(Config.getLabelLoginButtonForgotPassword(), login.getButtonForgotPassword().getText());
-        Assert.assertEquals(Config.getLabelLoginButtonRegistration(), login.getButtonRegistration().getText());
-        Assert.assertEquals(Config.getLabelLoginTextRememberMe(), login.getCheckBoxLabelRememberMe().getText());
-
+        Assert.assertEquals(login.getWelcomeText().getText(), Config.getLabelLoginTextWelcomeBack() );
+        Assert.assertEquals(login.getFieldPassword().getAttribute("placeholder"), Config.getLabelLoginFieldPassword());
+        Assert.assertEquals(login.getFieldUsername().getAttribute("placeholder"), Config.getLabelLoginFieldUsername());
+        Assert.assertEquals(login.getButtonLogin().getText(), Config.getLabelLoginButtonLogin());
+        Assert.assertEquals(login.getButtonForgotPassword().getText(), Config.getLabelLoginButtonForgotPassword());
+        Assert.assertEquals(login.getButtonRegistration().getText(), Config.getLabelLoginButtonRegistration());
+        Assert.assertEquals(login.getCheckBoxLabelRememberMe().getText(), Config.getLabelLoginTextRememberMe());
     }
 
 }

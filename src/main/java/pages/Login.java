@@ -33,7 +33,7 @@ public class Login extends Page {
     @FindBy(xpath = "//*[@id='page-top']/div/div/div/div/div/div/div[2]/div/div[3]/a")
     private WebElement buttonRegistration;
 
-    @FindBy(xpath = "//*[@id=\"page-top\"]/div/div/div/div/div/div/div[2]/div/div[3]/a")
+    @FindBy(xpath = "/html/body/div/div/div/div/div/div/div[2]/div/div[2]")
 	private WebElement alertWrongLoginOrPassword;
 
 	@FindBy(xpath="//*[@id='page-top']/div/div/div/div/div/div/div[2]/div/form/div[1]/div")

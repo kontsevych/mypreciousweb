@@ -111,8 +111,8 @@ public class Config {
         return property.getProperty("labelRegisterFieldEmail");
     }
 
-    public static String getLabelRegisterFieldName() {
-        return property.getProperty("labelRegisterFieldName");
+    public static String getLabelRegisterFieldFirstName() {
+        return property.getProperty("labelRegisterFieldFirstName");
     }
 
     public static String getLabelRegisterFieldLastName() {
@@ -125,6 +125,14 @@ public class Config {
 
     public static String getLabelRegister() {
         return property.getProperty("labelRegisterTop");
+    }
+
+    public static String getLabelRegisterNotificationInfo(){
+        return property.getProperty("labelRegisterNotificationInfo");
+    }
+
+    public static String getLabelRegisterLoginButton(){
+        return property.getProperty("labelRegisterLoginButton");
     }
 
     public static String getLabelForgotPasswordTop() {
