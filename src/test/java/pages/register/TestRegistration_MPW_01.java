@@ -34,5 +34,7 @@ public class TestRegistration_MPW_01 extends DefaultTestRegister {
         Assert.assertEquals(register.getLabelNoticeMessage().getText(), Config.getLabelRegisterNotificationInfo());
         Assert.assertEquals(register.getFieldFirstName().getAttribute("placeholder"), Config.getLabelRegisterFieldFirstName());
         Assert.assertEquals(register.getFieldLastName().getAttribute("placeholder"), Config.getLabelRegisterFieldLastName());
+        Assert.assertEquals(register.getButtonRegistration().getText(), Config.getLabelRegisterButtonRegister());
+        Assert.assertEquals(register.getButtonBackToLoginPage().getText(), Config.getLabelRegisterLoginButton());
     }
 }
