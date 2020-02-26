@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="classes" thread-count="10">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/mkontsevych/Documents/GitHub/mypreciousweb/src/test/java/pages">
+        <classes>
+            <class name="pages.forgotpassword.TestForgotPassword_MPW_01">
+                <methods>
+                    <include name="MPW_01_Verify_UI_Elements"/>
+                </methods>
+            </class>
+            <class name="pages.login.TestLogin_MPW_01">
+                <methods>
+                    <include name="MPW_01_Verify_UI_Elements"/>
+                </methods>
+            </class>
+            <class name="pages.login.TestLogin_MPW_02">
+                <methods>
+                    <include name="MPW_02_Verify_Login"/>
+                </methods>
+            </class>
+            <class name="pages.login.TestLogin_MPW_03">
+                <methods>
+                    <include name="MPW_03_Verify_Validation"/>
+                </methods>
+            </class>
+            <class name="pages.register.TestRegistration_MPW_01">
+                <methods>
+                    <include name="MPW_01"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

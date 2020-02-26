@@ -3,12 +3,14 @@ package defaults;
 import com.mypreciousweb.config.Config;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 
 import java.util.concurrent.TimeUnit;
 
 public class DefaultTest {
     protected WebDriver driver;
+    protected WebDriverWait wait;
 
     @BeforeClass
     public void setUp() {
@@ -22,6 +24,7 @@ public class DefaultTest {
         System.setProperty(Config.setNameWebdriverChromeDriver(), System.getProperty("user.home") + path);
 
         driver = new ChromeDriver();
+        wait = new WebDriverWait(driver, 40);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     }
 

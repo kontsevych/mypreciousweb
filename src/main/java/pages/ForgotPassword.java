@@ -6,10 +6,10 @@ import org.openqa.selenium.support.FindBy;
 
 public class ForgotPassword extends Page{
 
-    @FindBy(id = "page-top")
+    @FindBy(xpath = "//*[@id='page-top']/div/div/div/div/div/div/div[2]/div/div[1]/h1")
     private WebElement labelResetYourPassword;
 
-    @FindBy(id = "email")
+    @FindBy(xpath = "//*[@id='email']")
     private WebElement fieldEmail;
 
     @FindBy(xpath = "//*[@id='page-top']/div/div/div/div/div/div/div[2]/div/form/button")
