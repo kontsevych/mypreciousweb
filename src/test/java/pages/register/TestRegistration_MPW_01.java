@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 /**
- * Перевірика UI на сторінці реєстрації
+ * Перевірка UI на сторінці реєстрації
  */
 public class TestRegistration_MPW_01 extends DefaultTestRegister {
 
