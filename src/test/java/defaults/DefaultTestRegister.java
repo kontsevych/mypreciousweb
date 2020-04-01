@@ -1,5 +1,6 @@
 package defaults;
 
+import com.mypreciousweb.config.Config;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import pages.Login;
@@ -22,6 +23,14 @@ public class DefaultTestRegister extends DefaultTest {
 
     public void openRegisterPage() {
         login.getButtonRegistration().click();
+    }
+
+    public void createNewUser(){
+        openRegisterPage();
+        register.getFieldLogin().sendKeys(Config.getUsername());
+        register.getFieldPassword().sendKeys(Config.getPassword());
+        register.getFieldEmail().sendKeys(Config.getEmail());
+        register.getButtonRegistration().click();
     }
 
 }

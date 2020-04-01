@@ -9,7 +9,7 @@ public class Login extends Page {
     @FindBy(xpath = "//*[@id='page-top']/div/div/div/div/div/div/div[2]/div/div[1]/h1")
     private WebElement welcomeText;
 
-    @FindBy(id = "username")
+    @FindBy(xpath= "//*[@id='username']")
     private WebElement fieldUsername;
 
     @FindBy(id = "password")

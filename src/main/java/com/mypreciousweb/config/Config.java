@@ -214,5 +214,7 @@ public class Config {
     public static String getLabelDashboardYears() {
         return property.getProperty("labelDashboardYears");
     }
-
+    public static String getEmail(){
+        return property.getProperty("email");
+    }
 }
